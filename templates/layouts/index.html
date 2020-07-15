@@ -1,0 +1,40 @@
+{% extends "layouts/base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<img id="loading" alt="" src="/static/image/loading12.gif" />
+<div class="container" style="margin: 0 auto;">
+  <div class="row text-center">
+    <h1 class="canvas-header">Draw the Grapheme</h1>
+    <canvas id="inputCanvas" width="500" height="400"></canvas>
+  </div>
+  <div class="github-fork-ribbon-wrapper left">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/simonwhitaker/github-fork-ribbon-css">fork from github</a>
+    </div>
+ </div>
+  <div class="header">
+    <div class="header-button">
+      <button class="btn canvas-button" id="clearButton">Clear</button>
+      <button class="btn canvas-button" id="sendButton">Send data</button>
+    </div>
+  </div>
+
+  <div id="myModal" class="popup">
+    <!-- Modal content -->
+    <div class="popup-content">
+      <div class="popup-header">
+        <span class="end">×</span>
+        <h2></h2>
+      </div>
+      <div class="popup-body">
+        <h1 id="title">Consonant Diacritic | Grapheme Root | Vowel Diacritic</h1>
+        <h1 id="display_content"></h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
