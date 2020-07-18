@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Sep 17 21:05:01 2019
+Created on Tue Jul 13 2020
 
-@author: rownak
+@author: sumon
 """
 
 from __future__ import print_function
@@ -27,52 +27,13 @@ app._static_folder = os.path.abspath("templates/static/")
 
 @app.route('/', methods=['GET'])
 def index():
-    title = 'স্বরবর্ণ'
+    title = 'Draw-Grapheme'
     return render_template('layouts/landing_page.html', title=title)
 
 @app.route('/canvas', methods=['GET'])
 def show():
-    title = 'স্বরবর্ণ'
+    title = 'Draw-Grapheme'
     return render_template('layouts/index.html', title=title)
-
-def segment(image):
-	rows = image.shape[0]
-	cols = image.shape[1]
-	print("rows cols = ", rows, cols)
-	trow, drow, lcol, rcol = cols + 1, -1, rows + 1, -1
-
-	# left most column
-	for r in range(0, rows):
-		for c in range(0, cols):
-			if image[r][c] != 255 and c < lcol:
-				lcol = c
-				break
-
-	# right most column
-	for r in range(rows - 1,  -1, -1):
-		for c in range(cols):
-			if image[r][c] != 255 and c > rcol:
-				rcol = c
-				break
-
-	# left most row
-	for c in range(cols):
-		for r in range(rows):
-			if image[r][c] != 255 and r < trow:
-				trow = r
-				break
-
-	# right most row
-	for c in range(cols - 1, -1, -1):
-		for r in range(rows - 1, -1, -1):
-			if image[r][c] != 255 and r > drow:
-				drow = r
-				break
-
-	if trow == cols + 1 or drow == -1 or lcol == rows + 1 or rcol == -1:
-		return image
-	print(trow, drow, lcol, rcol)
-	return image[trow:drow,lcol:rcol]
 
 @app.route('/postmethod', methods = ['POST'])
 def post_javascript_data():
@@ -102,7 +63,6 @@ def post_javascript_data():
 	img = Image.open(BytesIO(img_bytes))
 	img  = np.array(img)
 	cv2.imwrite('picture.png',img)
-	# classifier = load_model('model1.h5')
 	# load json and create model
 	json_file = open('model.json', 'r')
 	loaded_model_json = json_file.read()
