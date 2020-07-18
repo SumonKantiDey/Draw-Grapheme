@@ -29,6 +29,7 @@ A data file is required for every language you want to recognize. The dataset wa
 
 ## CNN Model Summary
 Model: "model_1"
+```
 __________________________________________________________________________________________________
 Layer (type)                    Output Shape         Param #     Connected to                     
 ==================================================================================================
@@ -112,7 +113,7 @@ Total params: 8,951,258
 Trainable params: 8,949,402
 Non-trainable params: 1,856
 __________________________________________________________________________________________________
-
+```
 
 ## Installation
 
