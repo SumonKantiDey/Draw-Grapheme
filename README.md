@@ -8,8 +8,9 @@ This project involves classifying handwritten characters of the Bengali alphabet
 
 An experimental app for web that can  captured  `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic` that three component from handwritten grapheme using web canvas.
 <p align="center">
-<img src="https://img.youtube.com/vi/YPs3-d9UG-8/0.jpg)](https://youtu.be/YPs3-d9UG-8">
+<img src="https://www.youtube.com/watch?v=Es22hRympdY">
 </p>
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
 
 
 ## Technologies
