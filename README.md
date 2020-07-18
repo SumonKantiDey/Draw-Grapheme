@@ -1,9 +1,12 @@
 # Bengali.AI Handwritten Grapheme Classification [link](https://www.kaggle.com/c/bengaliai-cv19)
 <img src="https://github.com/SumonKantiDey/Draw-Grapheme/blob/master/templates/static/image/grapheme.png" >
 
-An experimental app for web that performs real-time bangla vowel handwritten character recognition captured using web canvas.
+This project involves classifying handwritten characters of the Bengali alphabet which is broken down into three components for each grapheme, or character: `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic`. The goal is the create a classification model that can classify each of these three components of a handwritten grapheme. 
+
 
 ## Project Demo Video
+
+An experimental app for web that can  captured  `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic` that three component from handwritten grapheme using web canvas.
 
 [![Watch the video](https://img.youtube.com/vi/YPs3-d9UG-8/0.jpg)](https://youtu.be/YPs3-d9UG-8)
 
