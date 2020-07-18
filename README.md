@@ -1,4 +1,5 @@
-# Bengali.AI Handwritten Grapheme Classification [!link](https://www.kaggle.com/c/bengaliai-cv19)
+# Bengali.AI Handwritten Grapheme Classification [link](https://www.kaggle.com/c/bengaliai-cv19)
+
 ![Bengali Grapheme](/opt/sumon/bengali_grapheme/templates/static/image/grapheme.png)
 
 An experimental app for web that performs real-time bangla vowel handwritten character recognition captured using web canvas.
