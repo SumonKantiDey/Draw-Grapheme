@@ -1,7 +1,7 @@
 # Bengali.AI Handwritten Grapheme Classification [link](https://www.kaggle.com/c/bengaliai-cv19)
 <img src="https://github.com/SumonKantiDey/Draw-Grapheme/blob/master/templates/static/image/grapheme.png" >
 
-This project involves classifying handwritten characters of the Bengali alphabet which is broken down into three components for each grapheme, or character: `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic`. The goal is the create a classification model that can classify each of these three components of a handwritten grapheme. Click [here](https://www.kaggle.com/c/bengaliai-cv19) for more information
+This project involves classifying handwritten characters of the Bengali alphabet which is broken down into three components for each grapheme, or character: `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic`. The goal is the create a classification model that can classify each of these three components of a handwritten grapheme. Click [here](https://www.kaggle.com/c/bengaliai-cv19) for more information. To know details about bengali grapheme check [Introductory Booklet](https://bengali.ai/wp-content/uploads/CV19-COCO-Grapheme.pdf) 
 
 ## Methods Used
 - Exploratory Data Analysis
@@ -12,7 +12,7 @@ This project involves classifying handwritten characters of the Bengali alphabet
 
 ## Project Demo Video
 
-An experimental app for web that can  captured  `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic` that three component from handwritten grapheme using web canvas.
+An experimental app for web that can  captured  `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic` that three component from handwritten grapheme using web canvas. Check this [ipython](https://github.com/SumonKantiDey/Draw-Grapheme/blob/master/multioutput-cnn-101.ipynb) notebook to save the weight of the multioutput CNN model.
 <p align="center">
 <img src="https://j.gifs.com/p8vPkN.gif" width="400" height="400" />
 </p>
