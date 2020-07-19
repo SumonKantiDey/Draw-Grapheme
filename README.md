@@ -30,12 +30,6 @@ An experimental app for web that can  captured  `1.the root`, `2.the vowel diacr
      - Flask (python web framework)
      - Jquery, Ajax, Bootstrap
 
-## Dataset
-
-A data file is required for every language you want to recognize. The dataset was obtained online from the [CMATERdb](https://www.dropbox.com/s/55bhfr3ycvsewsi/CMATERdb%203.1.2.rar) pattern recognition database repository. It consists of a Train folder and a Test folder, containing 12,000 and 3,000 images respectively. We only used vowels in our work.
-
-- For training data, we found 2112 images belonging to 11 classes.
-- For test data, we found 528 images belonging to 11 classes.
 
 ## CNN Model Summary
 Model: "model_1"
