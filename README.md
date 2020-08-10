@@ -12,7 +12,7 @@ This project involves classifying handwritten characters of the Bengali alphabet
 
 ## Project Demo Video
 
-An experimental app for web that can capture  `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic` from handwritten grapheme. Check this [ipython](https://github.com/SumonKantiDey/Draw-Grapheme/blob/master/multioutput-cnn-101.ipynb) notebook to save the weight of the **multioutput CNN model**.
+An experimental app for the web that can capture  `1.the root`, `2.the vowel diacritic`, `3. the consonant diacritic` from Bengali handwritten grapheme. Check this [ipython](https://github.com/SumonKantiDey/Draw-Grapheme/blob/master/multioutput-cnn-101.ipynb) notebook to save the weight of the **multioutput CNN model**.
 <p align="center">
 <img src="https://j.gifs.com/p8vPkN.gif" width="400" height="400" />
 </p>
