@@ -74,10 +74,10 @@ def post_javascript_data():
 	print("Loaded model from disk")
 	img = cv2.imread("picture.png", cv2.IMREAD_GRAYSCALE)
 	im_resized = cv2.resize(img, (64, 64))
-	cv2.imwrite('trial2.png',im_resized)
+	cv2.imwrite('resize_img.png',im_resized)
 	im = im_resized.reshape(64, 64, 1)
 	im = im/255
-	cv2.imwrite('seg.png',im_resized)
+	cv2.imwrite('nor_img.png',im_resized)
 	im = im.reshape(1, 64, 64, 1)
 	result = classifier.predict(np.array(im))
 	print(result)
