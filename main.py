@@ -9,6 +9,7 @@ Created on Tue Jul 13 2020
 from __future__ import print_function
 from flask import Flask, render_template
 from flask import request, jsonify
+from flask_ngrok import run_with_ngrok
 from keras import backend as K
 from keras.models import model_from_json
 from keras.models import load_model
@@ -21,7 +22,7 @@ import base64
 from io import BytesIO
 
 app = Flask(__name__)
-app.secret_key = 's3cr3t'
+run_with_ngrok(app)
 app.debug = True
 app._static_folder = os.path.abspath("templates/static/")
 
@@ -98,4 +99,5 @@ def post_javascript_data():
 	return jsonify(params)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+	app.run()
+    # app.run(host='0.0.0.0', port=5000)
